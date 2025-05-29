@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DJD LLM Chat - AI-powered chat interface with local LLM models." />
+  <title>DJD LLM Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" role="banner">
+      <img src="assets/DJD_LLM_logo_circular.png" alt="DJD Logo" />
+      <span class="logo-text">DJD LLM Chat</span>
+    </div>
+  </header>
+
+  <main id="app" role="main">
+    <div id="model-select-container">
+      <label for="model-select">Select Model:</label>
+      <select id="model-select" name="model-select" aria-label="Select LLM model">
+        <option value="llama3:latest">llama3:latest</option>
+        <option value="phi3:latest">phi3:latest</option>
+      </select>
+    </div>
+
+    <section id="chat" aria-live="polite" aria-label="Chat conversation"></section>
+
+    <textarea id="input" rows="3" placeholder="Type your message here..." aria-label="Chat input"></textarea>
+
+    <div class="controls">
+      <button id="send-btn" disabled aria-disabled="true">Send</button>
+      <button id="clear-btn">Clear Chat</button>
+      <button id="copy-btn">Copy Chat</button>
+      <button id="download-btn">Download Chat</button>
+      <label class="theme-switch" for="theme-toggle">
+        <input type="checkbox" id="theme-toggle" aria-checked="false" />
+        <span id="theme-label">Light Mode</span>
+      </label>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

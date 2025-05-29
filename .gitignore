@@ -1,0 +1,30 @@
+# Ignore environment files with sensitive info
+.env
+venv/
+__pycache__/
+*.pyc
+# Ignore Python environment folders
+venv/
+.env
+
+# Cache files
+.llm_cache/
+__pycache__/
+
+# OS files
+.DS_Store
+# Ignore config with API keys
+config.js
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Build output folders (if any)
+dist/
+build/
